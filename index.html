@@ -55,6 +55,35 @@
 
       </div>
     </aside>
+    <div id="connect-to-dialog" class="window modeless-float-320" onblur="console.log('blur')">
+      <div class="title-bar">
+        <button aria-label="Close" disabled class="hidden"></button>
+        <h1 class="title">Connect To...</h1>
+        <button aria-label="Resize" disabled class="hidden"></button>
+      </div>
+      <div class="separator"></div>
+
+      <div class="modeless-dialog">
+        <section class="field-row" style="justify-content: flex-start">
+          <label for="connect-to-host" class="modeless-text">Host</label>
+          <input id="connect-to-host" type="text" placeholder="" style="width:80%;">
+        </section>
+        <section class="field-row" style="justify-content: flex-start">
+          <label for="connect-to-port" class="modeless-text">Port</label>
+          <input id="connect-to-port" type="text" placeholder="" style="width:90px">
+        </section>
+        <section class="field-row" style="justify-content: flex-start">
+          <label for="connect-to-ssl" class="modeless-text">SSL</label>
+          <input id="connect-to-ssl" type="checkbox" name="ssl-checkbox" checked="true" />
+          <label for="connect-to-ssl" class="modeless-text"
+            style="top:-8px;margin-left:calc(15px + var(--checkbox-total-width));"></label>
+        </section>
+        <section class="field-row" style="justify-content: flex-end">
+          <button class="btn" id="connect-to-cancel">Cancel</button>
+          <button class="btn" id="connect-to-accept">Connect</button>
+        </section>
+      </div>
+    </div>
   </main>
 </body>
 
